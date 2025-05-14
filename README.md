@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# Sun Shadow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern 3D sun shadow simulator built with React, TypeScript, and Vite. This application allows users to visualize and simulate sun shadows in real-time based on geographical location and time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **3D Scene Visualization**
+  - Real-time sun position and shadow simulation
+  - Interactive 3D model management
+  - Dynamic shadow casting based on sun position
 
-## Expanding the ESLint configuration
+- **Time-Space Coordinates**
+  - Set geographical location (latitude/longitude)
+  - Configure date and time
+  - Automatic sun position calculation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Model Management**
+  - Add, update, and delete 3D models
+  - Model selection and manipulation
+  - Real-time model updates
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **User Interface**
+  - Resizable sidebar
+  - Responsive design
+  - Intuitive model management interface
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React
+- TypeScript
+- Vite
+- ESLint with TypeScript support
+- Three.js (for 3D rendering)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
